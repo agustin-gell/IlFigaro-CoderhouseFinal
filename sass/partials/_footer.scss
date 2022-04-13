@@ -1,0 +1,12 @@
+@import "./variables";
+
+footer {
+    background: $color-primario;
+    background: $degradado-negro;
+    color: map-get($mapas, color);
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

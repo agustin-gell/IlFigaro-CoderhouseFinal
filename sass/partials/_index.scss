@@ -1,0 +1,29 @@
+.container-index {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    width: 45%;
+}
+
+.titulo-index-tarjeta {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.foto-index {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+
+    .container-index {
+        @include margin (3rem, auto, 3rem, auto);
+        width: 90%;
+    }
+}

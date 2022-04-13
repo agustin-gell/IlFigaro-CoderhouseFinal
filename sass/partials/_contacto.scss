@@ -1,0 +1,73 @@
+@import "./variables";
+
+.container-formulario {
+    display: flex;
+    flex-direction: column;
+
+    &__formulario {
+        @extend %flex;
+        justify-content: center;
+        width: 30%;
+        margin: auto;
+    }
+
+    &__boton-enviar {
+        background-color: black;
+        color: white;
+        text-transform: uppercase;
+        @extend %flex;
+        flex-direction: column;
+        width: 20%;
+        margin: auto;
+    }
+
+}
+
+.container-formulario__boton-enviar:hover {
+    background: $color-secundario;
+    background: $degradado-gris;
+    color: black;
+    font-weight: bold;
+}
+
+.container-redes {
+
+    &__logos-redes {
+        @extend %flex;
+
+        &__logos {
+            width: 4em;
+            height: 4em;
+            margin: auto;
+            border-radius: 2em;
+            background-color: white;
+            margin-left: 1em;
+            margin-right: 1em;
+        }
+
+    }
+
+}
+
+.container-redes__logos-redes__logos:hover {
+    transform: scale(1.1, 1.1);
+}
+
+.seguinos {
+    margin: auto;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    background: $color-secundario;
+    background: $degradado-gris;
+    text-align: center;
+    height: 1.5em;
+    width: 33%;
+}
+
+@media (max-width: 768px) {
+
+    .seguinos {
+        width: 80%;
+    }
+}
